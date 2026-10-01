@@ -12,6 +12,10 @@
 .site-segment-icon{width:50px;height:50px;display:grid;place-items:center;margin-bottom:18px;border-radius:15px;background:#eee8fb;border:1px solid rgba(111,53,210,.14);color:#6f35d2}
 .site-segment-icon svg{width:25px;height:25px}
 
+/* Ícones dos projetos recentes */
+.project-segment-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:16px;border-radius:14px;background:rgba(139,92,246,.10);border:1px solid rgba(196,181,253,.18);color:#c4b5fd}
+.project-segment-icon svg{width:22px;height:22px}
+
 /* Segurança de grids */
 .costs-grid,.site-grid,.business-grid,.investment-grid,.summary-grid,.quality,.portfolio-grid{min-width:0}
 .cost-card,.site-card,.business-card,.fee-card,.media-card,.summary-box,.project-card,.quality>*{min-width:0}
@@ -43,6 +47,8 @@ footer .portrait-wrap img{display:block;width:auto;height:100%;max-height:520px;
 
   .site-segment-icon{width:46px;height:46px;margin-bottom:16px}
   .site-segment-icon svg{width:23px;height:23px}
+  .project-segment-icon{width:42px;height:42px;margin-bottom:14px}
+  .project-segment-icon svg{width:21px;height:21px}
 }
 
 @media(max-width:500px){
