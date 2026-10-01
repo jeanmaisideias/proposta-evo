@@ -13,8 +13,11 @@
 .site-segment-icon svg{width:25px;height:25px}
 
 /* Ícones dos projetos recentes */
-.project-segment-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:16px;border-radius:14px;background:rgba(139,92,246,.10);border:1px solid rgba(196,181,253,.18);color:#c4b5fd}
+.project-meta{display:flex;align-items:center;gap:10px;margin-bottom:18px;min-width:0}
+.project-meta small{margin:0;color:var(--purple-light);text-transform:uppercase;letter-spacing:.11em;font-size:10px;line-height:1.25}
+.project-segment-icon{width:44px;height:44px;display:grid;place-items:center;flex:0 0 44px;margin:0;border-radius:14px;background:rgba(139,92,246,.10);border:1px solid rgba(196,181,253,.18);color:#c4b5fd}
 .project-segment-icon svg{width:22px;height:22px}
+.project-card strong{display:block}
 
 /* Segurança de grids */
 .costs-grid,.site-grid,.business-grid,.investment-grid,.summary-grid,.quality,.portfolio-grid{min-width:0}
@@ -47,7 +50,8 @@ footer .portrait-wrap img{display:block;width:auto;height:100%;max-height:520px;
 
   .site-segment-icon{width:46px;height:46px;margin-bottom:16px}
   .site-segment-icon svg{width:23px;height:23px}
-  .project-segment-icon{width:42px;height:42px;margin-bottom:14px}
+  .project-meta{gap:9px;margin-bottom:16px}
+  .project-segment-icon{width:42px;height:42px;flex-basis:42px}
   .project-segment-icon svg{width:21px;height:21px}
 }
 
