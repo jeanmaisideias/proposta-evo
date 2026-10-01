@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="footer-fix.css?v=20261001-2" />
+  <link rel="stylesheet" href="footer-fix.css?v=20261001-3" />
 </head>
 <body>
   <div class="nav-wrap">
@@ -23,7 +23,17 @@
           <a href="#investimento">Investimento</a>
           <a class="nav-cta" href="#contato">Próximo passo</a>
         </div>
+        <button class="mobile-menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
       </nav>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <a href="#frentes">Frentes</a>
+        <a href="#gestao">Gestão</a>
+        <a href="#sites">Sites</a>
+        <a href="#investimento">Investimento</a>
+        <a class="mobile-menu-cta" href="#contato">Próximo passo</a>
+      </div>
     </div>
   </div>
   <main id="top">
@@ -79,24 +89,40 @@
           <p>Evo e Fuplastic atendidas dentro da mesma estrutura de marketing, com planejamento e execução contínuos.</p>
         </div>
         <div class="investment-grid">
-          <article class="fee-card reveal"><div><div class="price-label">Fee mensal de gestão</div><div class="price">R$ 3.000 <small>/ mês</small></div><p>Inclui planejamento, criação e publicação de conteúdos, gestão de campanhas em Meta Ads e Google Ads, acompanhamento e otimização das duas frentes.</p><span class="included-chip">Evo + Fuplastic no mesmo fee</span></div></article>
+          <article class="fee-card reveal">
+            <div><div class="price-label">Fee mensal de gestão</div><div class="price">R$ 3.000 <small>/ mês</small></div><p>Inclui planejamento, criação e publicação de conteúdos, gestão de campanhas em Meta Ads e Google Ads, acompanhamento e otimização das duas frentes.</p><span class="included-chip">Evo + Fuplastic no mesmo fee</span></div>
+          </article>
           <aside class="media-card reveal"><div><h3>Verba de mídia</h3><p>O investimento destinado diretamente ao Google Ads e Meta Ads será definido separadamente, conforme os objetivos, volume de campanhas e prioridades de cada operação.</p></div><div class="media-note">A verba de anúncios não está inclusa no fee mensal de R$ 3.000.</div></aside>
         </div>
       </div>
     </section>
     <section id="sites" class="section-light">
       <div class="container">
-        <div class="section-head reveal"><div><span class="kicker">Desenvolvimento das One Pages</span><h2>Duas páginas próprias para transformar interesse em contato.</h2></div><p>O desenvolvimento é um investimento pontual. Cada frente terá uma página exclusiva, responsiva e preparada para apoiar as campanhas.</p></div>
-        <div class="site-grid">
-          <article class="site-card reveal"><div><div class="site-type">One Page</div><h3>Evo Negócios Imobiliários</h3><p>Apresentação da imobiliária, oportunidades, diferenciais e pontos de conversão para novos contatos comerciais.</p></div><div><div class="site-price"><strong>R$ 2.500</strong><span>condição especial<br/>por projeto</span></div><span class="unique">Pagamento único</span></div></article>
-          <article class="site-card reveal"><div><div class="site-type">One Page</div><h3>Fuplastic</h3><p>Apresentação de soluções, aplicações, diferenciais construtivos e pontos de conversão para novas consultas comerciais.</p></div><div><div class="site-price"><strong>R$ 2.500</strong><span>condição especial<br/>por projeto</span></div><span class="unique">Pagamento único</span></div></article>
+        <div class="section-head reveal">
+          <div><span class="kicker">Desenvolvimento das One Pages</span><h2>Duas páginas próprias para transformar interesse em contato.</h2></div>
+          <p>O desenvolvimento é um investimento pontual. Cada frente terá uma página exclusiva, responsiva e preparada para apoiar as campanhas.</p>
         </div>
-        <div class="quality reveal"><div><h3>A qualidade dos sites que desenvolvemos.</h3><p>Não entregamos apenas uma página bonita. Trabalhamos tecnologia, performance, experiência do usuário e estrutura de conversão para que o site ajude a transformar tráfego em oportunidades reais. Os projetos são responsivos, otimizados para campanhas, preparados para mensuração e construídos com uma arquitetura moderna que facilite evolução, velocidade e resultado.</p></div><div class="quality-points"><div class="quality-point"><strong>Performance</strong><span>Estrutura enxuta, rápida e preparada para campanhas.</span></div><div class="quality-point"><strong>Mobile first</strong><span>Experiência consistente em celulares, tablets e desktop.</span></div><div class="quality-point"><strong>Conversão</strong><span>CTAs e jornadas pensados para gerar contato e oportunidade.</span></div><div class="quality-point"><strong>Mensuração</strong><span>Base pronta para integrações, eventos e acompanhamento de resultados.</span></div></div></div>
+        <div class="site-grid">
+          <article class="site-card reveal"><div><div class="site-segment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/><path d="M8 11h.01M16 11h.01"/></svg></div><div class="site-type">One Page · Mercado Imobiliário</div><h3>Evo Negócios Imobiliários</h3><p>Apresentação da imobiliária, oportunidades, diferenciais e pontos de conversão para novos contatos comerciais.</p></div><div><div class="site-price"><strong>R$ 2.500</strong><span>condição especial<br/>por projeto</span></div><span class="unique">Pagamento único</span></div></article>
+          <article class="site-card reveal"><div><div class="site-segment-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V8l8-4 8 4v12"/><path d="M8 20v-5h8v5"/><path d="M7 10h2M11 10h2M15 10h2"/><path d="M7 13h2M15 13h2"/></svg></div><div class="site-type">One Page · Soluções Construtivas</div><h3>Fuplastic</h3><p>Apresentação de soluções, aplicações, diferenciais construtivos e pontos de conversão para novas consultas comerciais.</p></div><div><div class="site-price"><strong>R$ 2.500</strong><span>condição especial<br/>por projeto</span></div><span class="unique">Pagamento único</span></div></article>
+        </div>
+        <div class="quality reveal">
+          <div><h3>A qualidade dos sites que desenvolvemos.</h3><p>Não entregamos apenas uma página bonita. Trabalhamos tecnologia, performance, experiência do usuário e estrutura de conversão para que o site ajude a transformar tráfego em oportunidades reais. Os projetos são responsivos, otimizados para campanhas, preparados para mensuração e construídos com uma arquitetura moderna que facilite evolução, velocidade e resultado.</p></div>
+          <div class="quality-points">
+            <div class="quality-point"><strong>Performance</strong><span>Estrutura enxuta, rápida e preparada para campanhas.</span></div>
+            <div class="quality-point"><strong>Mobile first</strong><span>Experiência consistente em celulares, tablets e desktop.</span></div>
+            <div class="quality-point"><strong>Conversão</strong><span>CTAs e jornadas pensados para gerar contato e oportunidade.</span></div>
+            <div class="quality-point"><strong>Mensuração</strong><span>Base pronta para integrações, eventos e acompanhamento de resultados.</span></div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section-dark">
       <div class="container">
-        <div class="section-head reveal"><div><span class="kicker">Sites entregues recentemente</span><h2>Projetos que já estão no ar.</h2></div><p>Alguns exemplos recentes desenvolvidos pela Mais Ideias. Todos os cards abaixo são clicáveis.</p></div>
+        <div class="section-head reveal">
+          <div><span class="kicker">Sites entregues recentemente</span><h2>Projetos que já estão no ar.</h2></div>
+          <p>Alguns exemplos recentes desenvolvidos pela Mais Ideias. Todos os cards abaixo são clicáveis.</p>
+        </div>
         <div class="portfolio-grid">
           <a class="project-card reveal" href="https://scarpress.com.br/" target="_blank" rel="noopener"><small>Logística</small><strong>Scarpress</strong><div class="project-link"><span>Ver projeto</span><b>↗</b></div></a>
           <a class="project-card reveal" href="https://www.evoluttaconstrutora.com.br/ballockone/" target="_blank" rel="noopener"><small>Imobiliário</small><strong>Residencial Ballok One</strong><div class="project-link"><span>Ver projeto</span><b>↗</b></div></a>
@@ -108,7 +134,10 @@
     </section>
     <section class="section-black">
       <div class="container">
-        <div class="section-head reveal"><div><span class="kicker">Custos técnicos</span><h2>Domínio, hospedagem e manutenção são cobrados à parte.</h2></div><p>Esses valores não fazem parte nem do fee de marketing nem do investimento de desenvolvimento das One Pages.</p></div>
+        <div class="section-head reveal">
+          <div><span class="kicker">Custos técnicos</span><h2>Domínio, hospedagem e manutenção são cobrados à parte.</h2></div>
+          <p>Esses valores não fazem parte nem do fee de marketing nem do investimento de desenvolvimento das One Pages.</p>
+        </div>
         <div class="costs-grid">
           <article class="cost-card reveal"><div class="cost-top"><div><h3>Registro do domínio</h3></div><div class="cost-value">R$ 40/ano</div></div><p>Valor de referência do Registro.br, por domínio registrado. A renovação é anual e fica vinculada ao domínio de cada operação.</p></article>
           <article class="cost-card reveal"><div class="cost-top"><div><h3>Hospedagem + manutenção</h3></div><div class="cost-value">R$ 129/mês</div></div><p>Valor mensal por site, contemplando hospedagem e manutenção técnica da página.</p></article>
@@ -118,7 +147,10 @@
     </section>
     <section id="investimento" class="section-dark">
       <div class="container">
-        <div class="section-head reveal"><div><span class="kicker">Resumo do investimento</span><h2>O que é mensal, o que é único e o que fica à parte.</h2></div><p>Separação objetiva para facilitar a leitura da proposta e evitar qualquer dúvida sobre recorrência.</p></div>
+        <div class="section-head reveal">
+          <div><span class="kicker">Resumo do investimento</span><h2>O que é mensal, o que é único e o que fica à parte.</h2></div>
+          <p>Separação objetiva para facilitar a leitura da proposta e evitar qualquer dúvida sobre recorrência.</p>
+        </div>
         <div class="summary-grid">
           <article class="summary-box purple reveal"><div class="s-label">Gestão de Marketing Digital</div><strong>R$ 3.000/mês</strong><p>Fee mensal para Evo + Fuplastic. Verba de mídia não inclusa.</p></article>
           <article class="summary-box reveal"><div class="s-label">Duas One Pages</div><strong>R$ 5.000</strong><p>R$ 2.500 por projeto. Desenvolvimento com pagamento único.</p></article>
@@ -129,7 +161,12 @@
       </div>
     </section>
     <section class="final">
-      <div class="container final-card reveal"><span class="kicker">Próximo passo</span><h2>Colocar as duas frentes em movimento.</h2><p>A partir da aprovação, organizamos prioridades, posicionamento, estrutura digital e campanhas para iniciar uma operação integrada, com foco em visibilidade, demanda e novas oportunidades comerciais.</p><div class="steps"><span class="step">Aprovação da proposta</span><span class="step">Definição das prioridades</span><span class="step">Definição da verba de mídia</span><span class="step">Início da operação</span></div></div>
+      <div class="container final-card reveal">
+        <span class="kicker">Próximo passo</span>
+        <h2>Colocar as duas frentes em movimento.</h2>
+        <p>A partir da aprovação, organizamos prioridades, posicionamento, estrutura digital e campanhas para iniciar uma operação integrada, com foco em visibilidade, demanda e novas oportunidades comerciais.</p>
+        <div class="steps"><span class="step">Aprovação da proposta</span><span class="step">Definição das prioridades</span><span class="step">Definição da verba de mídia</span><span class="step">Início da operação</span></div>
+      </div>
     </section>
   </main>
   <footer id="contato">
@@ -139,12 +176,16 @@
         <div class="sig-brand">MAIS <span>IDEIAS</span> · MKT ESTRATÉGICO 360°</div>
         <h3>Jean Bernardes</h3>
         <div class="role">CEO e Diretor de Negócios<br/>Mais Ideias MKT Estratégico 360°</div>
-        <div class="contact-list"><a href="tel:+5547988689351">47 98868.9351</a><a href="mailto:diretoria@maisideiasmkt.com.br">diretoria@maisideiasmkt.com.br</a><span>De Santa Catarina para o Brasil todo</span></div>
-        <a class="footer-cta" href="https://wa.me/5547988689351" target="_blank" rel="noopener">Falar com Jean Bernardes</a>
+        <div class="contact-list">
+          <a href="tel:+5547988689351">47 98868.9351</a>
+          <a href="mailto:diretoria@maisideiasmkt.com.br">diretoria@maisideiasmkt.com.br</a>
+          <span>De Santa Catarina para o Brasil todo</span>
+        </div>
+        <a class="footer-cta" href="https://wa.me/5547988689351?text=QUERO%20AGENDAR%20REUNI%C3%83O%20PARA%20TRATAR%20DA%20PROPOSTA%20EVO%20%2B%20FULPLASTIC" target="_blank" rel="noopener">Falar com Jean Bernardes</a>
       </div>
     </div>
     <div class="container footer-bottom"><div>Mais Ideias · Marketing · Inteligência · Vendas</div><div>Proposta comercial · Evo Negócios Imobiliários + Fuplastic · 2026</div></div>
   </footer>
-  <script src="app.js?v=20261001-2" defer></script>
+  <script src="app.js?v=20261001-3" defer></script>
 </body>
 </html>
